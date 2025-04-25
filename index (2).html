@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Queen's Restaurant</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="logo">
+            <h1>La Queen's</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Location</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2 class="hero-title">A Royal Dining Experience</h2>
+            <p>Discover the finest cuisine in New Delhi, Lajpat Nagar, Krishna Market</p>
+            <button class="cta-btn" onclick="bookTable()">Book a Table</button>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about">
+        <div class="about-content">
+            <h2 class="about-title">About Us</h2>
+            <p>At La Queen's, we offer an unforgettable dining experience with an exquisite selection of food and premium ambiance. Located in the heart of Lajpat Nagar, enjoy a blend of traditional flavors and modern creativity.</p>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section class="booking" id="booking">
+        <h2 class="booking-title">Reserve Your Table</h2>
+        <form id="booking-form">
+            <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="date">Date</label>
+                <input type="date" id="date" required>
+            </div>
+            <div class="form-group">
+                <label for="time">Time</label>
+                <input type="time" id="time" required>
+            </div>
+            <button type="submit" class="cta-btn">Submit Booking</button>
+        </form>
+        <div id="confirmation" class="confirmation"></div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Puri Raat Maine Web Design Kari, Kuch Toh Taarif Karo Yaar - Sam</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
